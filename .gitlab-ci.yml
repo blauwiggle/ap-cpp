@@ -1,0 +1,28 @@
+stages:
+  - build
+  - test
+
+build:
+  image: patrigg/cpp_build_env:latest
+  stage: build
+  script:
+    - mkdir build
+    - cd build
+    - cmake -DTESTING=YES -G Ninja ..
+    - cmake --build . --config Debug
+  artifacts:
+    paths:
+      - build/
+    expire_in: 1 day
+
+# run tests using the binary built before
+test:
+  image: patrigg/cpp_build_env:latest
+  stage: test
+  variables:
+    GIT_STRATEGY: none
+  dependencies:
+    - build
+  script:
+    - cd build
+    - ctest -C Debug
