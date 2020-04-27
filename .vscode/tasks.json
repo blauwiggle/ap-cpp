@@ -1,0 +1,31 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build All",
+      "type": "shell",
+      "command": "cmake --build .",
+      "options": { "cwd": "build" },
+      "problemMatcher": ["$gcc"],
+      "group": "build"
+    },
+    {
+      "label": "Build ToDo List",
+      "type": "shell",
+      "command": "cmake --build . -t todo_list",
+      "options": { "cwd": "build" },
+      "problemMatcher": ["$gcc"],
+      "group": "build"
+    },
+    {
+      "label": "Build ToDo List Tests",
+      "type": "shell",
+      "command": "cmake --build . -t todo_list_tests",
+      "options": { "cwd": "build" },
+      "problemMatcher": ["$gcc"],
+      "group": "build"
+    }
+  ]
+}

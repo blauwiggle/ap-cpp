@@ -1,7 +1,6 @@
 #include "todo_list.hpp"
 
-int main()
+int main(int argc, char *argv[])
 {
-    todoList();
-    return 0;
+    return _main(argc, argv);
 }

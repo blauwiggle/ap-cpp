@@ -1,5 +1,9 @@
 #include "todo_list.hpp"
+#include <iostream>
 
-void todoList()
+int _main(int argc, char *argv[])
 {
+    std::cout << "Hello World!\n";
+
+    return 0;
 }
