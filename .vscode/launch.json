@@ -12,6 +12,9 @@
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}/build/todo_list",
+      "windows": {
+        "program": "${workspaceFolder}/build/todo_list/todo_list.exe"
+      },
       "environment": [],
       "externalConsole": false,
       "setupCommands": [
@@ -31,6 +34,9 @@
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}/build/todo_list",
+      "windows": {
+        "program": "${workspaceFolder}/build/todo_list/todo_list.exe"
+      },
       "environment": [],
       "externalConsole": false,
       "setupCommands": [
