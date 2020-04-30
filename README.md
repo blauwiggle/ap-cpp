@@ -4,7 +4,7 @@ This is the home of exercises for the lecture Advanced Programming in C++ taught
 
 ## Prerequisites
 
-There are a few prerequisites that have to be met to build the exercises. Before you install them, first check which one is probably already installed on your system. I generally recommend you also use Visual Studio Code with GCC. So if you have issues there are more people which may have experienced similar issues and can help you.
+There are a few prerequisites that have to be met to build the exercises. Before you install them, first check which one is probably already installed on your system. I generally recommend you also use Visual Studio Code. Compiler wise: GCC is available on most Linux distributions without additional install steps, Clang is already installed on Mac if you have XCode, on windows, you can install either GCC or Clang. So if you have issues there are more people which may have experienced similar issues and can help you.
 
 ### CMake
 
