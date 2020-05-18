@@ -1,6 +1,7 @@
 #include "helpers.hpp"
 #include <stdio.h>
 #include <stdlib.h>
+#include <iostream>
 #ifdef __unix__
 #include <termios.h>
 #include <unistd.h>
@@ -28,7 +29,7 @@ int getch(void)
 
     if (cbreak(STDIN_FILENO) == -1)
     {
-        printf("Fehler bei der Funktion cbreak ... \n");
+        printf("Error in function cbreak ... \n");
         exit(EXIT_FAILURE);
     }
     c = getchar();
@@ -38,7 +39,7 @@ int getch(void)
 
 void clearScreen()
 {
-    system("clear");
+    std::cout << "\x1b[2J";
 }
 
 #elif __WIN32__ || _MSC_VER || __MS_DOS__
