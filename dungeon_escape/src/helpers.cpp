@@ -23,7 +23,7 @@ static int cbreak(int fd)
     return 1;
 }
 
-int getch(void)
+int getCharacter(void)
 {
     int c;
 
@@ -50,7 +50,7 @@ void clearScreen()
     system("cls");
 }
 
-int getch(void)
+int getCharacter(void)
 {
     _getch();
 }

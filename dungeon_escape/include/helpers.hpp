@@ -1,5 +1,5 @@
 #pragma once
 
-int getch(void);
+int getCharacter(void);
 
 void clearScreen(void);
