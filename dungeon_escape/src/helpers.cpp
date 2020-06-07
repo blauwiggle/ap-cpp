@@ -52,6 +52,6 @@ void clearScreen()
 
 int getCharacter(void)
 {
-    _getch();
+    return _getch();
 }
 #endif
