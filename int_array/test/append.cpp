@@ -8,6 +8,6 @@ TEST_CASE("append values", "[int_array]")
     {
         array.append(i + 20);
         REQUIRE(array[i] == i + 20);
-        REQUIRE(array.size() == i);
+        REQUIRE(array.size() == i + 1);
     }
 }
