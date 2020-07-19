@@ -1,5 +1,7 @@
 set(SOURCES
     src/helpers.cpp
+    src/dungeon.cpp
+    src/vector2d.cpp
 )
 
 set(TESTS
