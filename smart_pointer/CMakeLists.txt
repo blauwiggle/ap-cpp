@@ -6,6 +6,12 @@ set(TESTS
     test/unique_move_construct.cpp
     test/unique_move_assign.cpp
     test/unique_comparison.cpp
+    test/shared_create.cpp
+    test/shared_copy_construct.cpp
+    test/shared_copy_assign.cpp
+    test/shared_move_construct.cpp
+    test/shared_move_assign.cpp
+    test/shared_comparison.cpp
 )
 
 add_executable(smart_pointer

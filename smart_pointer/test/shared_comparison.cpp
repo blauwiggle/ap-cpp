@@ -1,11 +1,11 @@
 #include <catch2/catch.hpp>
-#include "unique_pointer.hpp"
+#include "shared_pointer.hpp"
 #include "alive.hpp"
 
-TEST_CASE("unique pointer compare empty", "[unique_pointer]")
+TEST_CASE("shared pointer compare empty", "[shared_pointer]")
 {
-    UniquePointer<int> lhs;
-    UniquePointer<int> rhs;
+    SharedPointer<int> lhs;
+    SharedPointer<int> rhs;
 
     REQUIRE(lhs == rhs);
     REQUIRE(!(lhs != rhs));
@@ -16,10 +16,10 @@ TEST_CASE("unique pointer compare empty", "[unique_pointer]")
     REQUIRE(lhs >= rhs);
 }
 
-TEST_CASE("unique pointer compare first empty", "[unique_pointer]")
+TEST_CASE("shared pointer compare first empty", "[shared_pointer]")
 {
-    UniquePointer<int> lhs;
-    UniquePointer<int> rhs(new int(10));
+    SharedPointer<int> lhs;
+    SharedPointer<int> rhs(new int(10));
 
     REQUIRE(!(lhs == rhs));
     REQUIRE(lhs != rhs);
@@ -30,10 +30,10 @@ TEST_CASE("unique pointer compare first empty", "[unique_pointer]")
     REQUIRE(!(lhs >= rhs));
 }
 
-TEST_CASE("unique pointer compare second empty", "[unique_pointer]")
+TEST_CASE("shared pointer compare second empty", "[shared_pointer]")
 {
-    UniquePointer<int> lhs(new int(10));
-    UniquePointer<int> rhs;
+    SharedPointer<int> lhs(new int(10));
+    SharedPointer<int> rhs;
 
     REQUIRE(!(lhs == rhs));
     REQUIRE(lhs != rhs);
@@ -44,10 +44,10 @@ TEST_CASE("unique pointer compare second empty", "[unique_pointer]")
     REQUIRE(lhs >= rhs);
 }
 
-TEST_CASE("unique pointer compare both valid", "[unique_pointer]")
+TEST_CASE("shared pointer compare both valid", "[shared_pointer]")
 {
-    UniquePointer<int> lhs(new int(10));
-    UniquePointer<int> rhs(new int(6));
+    SharedPointer<int> lhs(new int(10));
+    SharedPointer<int> rhs(new int(6));
 
     REQUIRE(!(lhs == rhs));
     REQUIRE(lhs != rhs);

@@ -1,15 +1,15 @@
 #include <catch2/catch.hpp>
 #include <memory>
-#include "unique_pointer.hpp"
+#include "shared_pointer.hpp"
 #include "alive.hpp"
 
-TEST_CASE("unique pointer move assign to empty", "[unique_pointer]")
+TEST_CASE("shared pointer move assign to empty", "[shared_pointer]")
 {
     bool objectAlive;
     Alive *object = new Alive(4, objectAlive);
-    UniquePointer<Alive> source(object);
+    SharedPointer<Alive> source(object);
 
-    UniquePointer<Alive> target;
+    SharedPointer<Alive> target;
 
     target = std::move(source);
 
@@ -18,14 +18,14 @@ TEST_CASE("unique pointer move assign to empty", "[unique_pointer]")
     REQUIRE(objectAlive);
 }
 
-TEST_CASE("unique pointer move assign to valid", "[unique_pointer]")
+TEST_CASE("shared pointer move assign to valid", "[shared_pointer]")
 {
     bool sourceAlive;
     bool targetAlive;
     auto object = new Alive(3, sourceAlive);
-    UniquePointer<Alive> source(object);
+    SharedPointer<Alive> source(object);
 
-    UniquePointer<Alive> target(new Alive(6, targetAlive));
+    SharedPointer<Alive> target(new Alive(6, targetAlive));
 
     target = std::move(source);
 

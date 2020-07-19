@@ -1,15 +1,15 @@
 #include <catch2/catch.hpp>
 #include <memory>
-#include "unique_pointer.hpp"
+#include "shared_pointer.hpp"
 #include "alive.hpp"
 
-TEST_CASE("unique pointer move construct", "[unique_pointer]")
+TEST_CASE("shared pointer move construct", "[shared_pointer]")
 {
     bool objectAlive;
     Alive *object = new Alive(4, objectAlive);
-    UniquePointer<Alive> source(object);
+    SharedPointer<Alive> source(object);
 
-    UniquePointer<Alive> target(std::move(source));
+    SharedPointer<Alive> target(std::move(source));
 
     REQUIRE(source.get() == nullptr);
     REQUIRE(target.get() == object);
