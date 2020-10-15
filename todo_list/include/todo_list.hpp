@@ -1,3 +1,3 @@
 #pragma once
 
-int _main(int argc, char *argv[]);
+int runTodoList(int argc, char *argv[]);

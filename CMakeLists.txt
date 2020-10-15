@@ -9,7 +9,4 @@ include(Catch)
 add_subdirectory(third_party/lib/Catch2)
 
 add_subdirectory(todo_list)
-add_subdirectory(dungeon_escape)
-add_subdirectory(int_array)
-add_subdirectory(smart_pointer)
 

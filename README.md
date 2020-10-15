@@ -4,7 +4,7 @@ This is the home of exercises for the lecture Advanced Programming in C++ taught
 
 ## Prerequisites
 
-There are a few prerequisites that have to be met to build the exercises. Before you install them, first check which one is probably already installed on your system. I generally recommend you also use Visual Studio Code. Compiler wise: GCC is available on most Linux distributions without additional install steps, Clang is already installed on Mac if you have XCode, on windows, you can install either GCC or Clang. So if you have issues there are more people which may have experienced similar issues and can help you.
+There are a few prerequisites that have to be met to build the exercises. Before you install them, first check which one is probably already installed on your system. I generally recommend you also use Visual Studio Code. Compiler wise: GCC is available on most Linux distributions without additional install steps, Clang is already installed on Mac if you have XCode, on windows, you can install either GCC or Clang.
 
 ### CMake
 
@@ -32,7 +32,7 @@ C++ programs have to be compiled to machine code before they can run. There are 
 
 ### Editor/IDE
 
-There are plenty of editors and IDEs available for various platforms. The Visual Studio Code editor is used in the lecture. You can expect least friction when you also choose it. You may, however, prefer alternatives some of which are listed below.
+There are plenty of editors and IDEs available for various platforms. The Visual Studio Code editor is used in the lecture. However, you may also use other development environments. Here is a list of some tools which support CMake and C++ development:
 
 - [Visual Studio Code](https://code.visualstudio.com/) It is freely available on all major platforms and it supports C++ and CMake through extensions. You need to setup some extensions which can be installed from within the editor to get C++ and CMake support:
 

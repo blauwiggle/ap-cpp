@@ -4,8 +4,6 @@ Try to get familiar with your development environment and the basic syntax of C+
 
 You will implement a command-line ToDo List application to keep things simple. The user should be able to control the application textually. A project is already setup for you in the `todo_list` folder. Implement the whole application in `todo_list.cpp`.
 
-_Note:_ pay attention to the **low-dash** in front of the **\_main** function in the `todo_list.cpp` file. Do not remove it! The real main function is in `main.cpp` and just calls this function. We need to keep the main function separate to be able to run unit tests on the project.
-
 1. Run the code as is to check whether the compiler is working and your code runs.
 
 2. Run the dummy unit test with `ctest`
@@ -55,4 +53,4 @@ _Note:_ pay attention to the **low-dash** in front of the **\_main** function in
    ```
 
 10. Save the todo list in the `todolist.txt` file after the user selects the exit command,
-   just before the program ends. Write each todo in a single line.
+    just before the program ends. Write each todo in a single line.
