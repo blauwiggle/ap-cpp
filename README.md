@@ -53,3 +53,4 @@ There are plenty of editors and IDEs available for various platforms. The Visual
 Here is an overview of the exercises. The list will be extended during the semester.
 
 1. [Implement a ToDo list.](doc/todo_list.md)
+2. [Dungeon Escape game.](doc/dungeon_escape.md)
