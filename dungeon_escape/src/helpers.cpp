@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
-#ifdef __unix__
+#if __unix__ || __APPLE__
 #include <termios.h>
 #include <unistd.h>
 
