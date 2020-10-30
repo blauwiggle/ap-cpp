@@ -1,6 +1,5 @@
 {
-  "C_Cpp.default.configurationProvider": "vector-of-bool.cmake-tools",
-  "window.zoomLevel": 2,
+  "window.zoomLevel": 1,
   "files.associations": {
     "*.connect": "json",
     "array": "cpp",
@@ -77,6 +76,7 @@
     "cfenv": "cpp",
     "typeindex": "cpp",
     "typeinfo": "cpp",
-    "variant": "cpp"
+    "variant": "cpp",
+    "filesystem": "cpp"
   }
 }
