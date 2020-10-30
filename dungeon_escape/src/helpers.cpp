@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
-#ifdef __unix__
+#if __unix__ || __APPLE__
 #include <termios.h>
 #include <unistd.h>
 
@@ -42,7 +42,7 @@ void clearScreen()
     std::cout << "\x1b[2J";
 }
 
-#elif __WIN32__ || _MSC_VER || __MS_DOS__
+#elif __WIN32__ || _WIN32 || _MSC_VER || __MS_DOS__
 #include <conio.h>
 
 void clearScreen()
