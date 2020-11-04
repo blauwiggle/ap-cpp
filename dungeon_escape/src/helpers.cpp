@@ -42,6 +42,11 @@ void clearScreen()
     std::cout << "\x1b[2J";
 }
 
+void printInput(int c)
+{
+    printf("%c\n", (char)c);
+}
+
 #elif __WIN32__ || _WIN32 || _MSC_VER || __MS_DOS__
 #include <conio.h>
 

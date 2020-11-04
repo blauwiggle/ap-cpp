@@ -11,15 +11,6 @@ struct Scalar
     int x;
 };
 
-// Vector2D &operator+(Vector2D lhs, const int &rhs);
-// Vector2D &operator+(int lhs, const Vector2D &rhs);
-
-// Vector2D &operator-(Vector2D lhs, const int &rhs);
-// Vector2D &operator-(int lhs, const Vector2D &rhs);
-
-// Vector2D &operator*(Vector2D lhs, const int &rhs);
-// Vector2D &operator*(int lhs, const Vector2D &rhs);
-
 // +=, -=, *
 Vector2D &operator+=(Vector2D &lhs, Vector2D &rhs);
 Vector2D &operator-=(Vector2D &lhs, Vector2D &rhs);
